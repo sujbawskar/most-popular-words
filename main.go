@@ -80,7 +80,6 @@ func main() {
 	}
 	go producer.Start(f)
 	wg.Wait()
-	fmt.Println("Cmd Inc. 2021")
 	pws := new(word_struct)
 	struct_slice := make([]word_struct, len(wordCountMap.m))
 	ix := 0
@@ -96,4 +95,5 @@ func main() {
 	for ix := 0; ix < 100; ix++ {
 		fmt.Printf("%v\n", struct_slice[ix])
 	}
+	fmt.Println("Cmd Inc. 2021")
 }
